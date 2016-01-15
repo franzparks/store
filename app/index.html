@@ -12,10 +12,10 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!--<link rel="stylesheet" href="/styles/main.css">-->
     <!-- endbuild -->
     
-    <link rel="stylesheet" href="styles/styles.css">
+    <!--<link rel="stylesheet" href="styles/styles.css">-->
     <!--Old links-->
     <script src="angular.js"></script>
     <link href="bootstrap.css" rel="stylesheet" />
@@ -24,10 +24,7 @@
     <script>
         angular.module("sportsStore", ["customFilters","cart", "ngRoute"])
         
-            $routeProvider.when('/', {
-             templateUrl: "/app.html",
-             controller: "sportsStoreCtrl"
-            });
+        .config(function ($routeProvider) {
 
             $routeProvider.when("/complete", {
                 templateUrl: "/views/thankYou.html"
@@ -53,12 +50,12 @@
         });
 
     </script>
-    <script src="scripts/controllers/sportsStore.js"></script>
-    <script src="scripts/filters/customFilters.js"></script>
-    <script src="scripts/controllers/productListControllers.js"></script>
-    <script src="scripts/components/cart/cart.js"></script>
-    <script src="scripts/ngmodules/angular-route.js"></script>
-    <script src="scripts/controllers/checkoutControllers.js"></script>
+    <script src="controllers/sportsStore.js"></script>
+    <script src="filters/customFilters.js"></script>
+    <script src="controllers/productListControllers.js"></script>
+    <script src="components/cart/cart.js"></script>
+    <script src="ngmodules/angular-route.js"></script>
+    <script src="controllers/checkoutControllers.js"></script>
 
 
 </head>
@@ -121,9 +118,6 @@
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
    
         <!-- endbuild -->
-
-    
-
 
 </body>
 </html>
