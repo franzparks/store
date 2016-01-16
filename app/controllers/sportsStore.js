@@ -7,6 +7,13 @@ angular.module("sportsStore")
 
     $scope.data = {}; 
 
+    $scope.data = {products : 
+      [{"category":"Brand Name Sneakers","name":"Nike","description":"the really awesome","price":"1200"},
+
+       {"category":"Brand Name Sneakers","name":"Addidas","description":"the other really awesome","price":"1000"}
+      ]
+    }; 
+
     $http.get(dataUrl)
             .success(function (data) {
                 $scope.data.products = data;
