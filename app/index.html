@@ -44,13 +44,16 @@
             $routeProvider.when("/placeorder", {
                 templateUrl: "/views/placeOrder.html"
             });
+            $routeProvider.when("/admin", {  //temporary
+                controller: "mainCtrl"
+            });
             $routeProvider.otherwise({
                 templateUrl: "/views/productList.html"
             }); 
         });
 
     </script>
-    <script src="controllers/sportsStore.js"></script>
+    <script src="scripts/controllers/sportsStore.js"></script>
     <script src="filters/customFilters.js"></script>
     <script src="controllers/productListControllers.js"></script>
     <script src="components/cart/cart.js"></script>
