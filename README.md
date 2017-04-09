@@ -1,5 +1,5 @@
 # Store Application
-A store application for showcasing AngularJS capabilities
+A store application for showcasing AngularJS One(old) capabilities
 Store items can be browsed in a catalog and added to cart for checkout
 
 ### Run the Application
